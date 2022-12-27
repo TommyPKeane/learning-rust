@@ -23,6 +23,8 @@ These sections go through explanations and reference links related to each direc
 
 This directory contains examples and tutorial code from going through Google's "Comprehensive Rust" online book.
 
+See the local [README](./comprehensive-rust/README.md) for more details.
+
 - https://github.com/google/comprehensive-rust/
 - https://google.github.io/comprehensive-rust/welcome.html
 
