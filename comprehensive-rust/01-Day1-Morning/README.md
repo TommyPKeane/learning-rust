@@ -18,22 +18,22 @@ Based-on: https://google.github.io/comprehensive-rust/welcome-day-1.html
 
 https://google.github.io/comprehensive-rust/hello-world.html
 
-See [00-HelloWorld/README.md](./00-HelloWorld/README.md)
+See [00-HelloWorld](./00-HelloWorld/)
 
 ### "Why Rust?"
 
 https://google.github.io/comprehensive-rust/why-rust.html
 
-See [01-WhyRust/README.md](./01-WhyRust/README.md)
+See [01-WhyRust](./01-WhyRust/)
 
 ### "Basic Syntax"
 
 https://google.github.io/comprehensive-rust/basic-syntax.html
 
-See [02-BasicSyntax/README.md](./02-BasicSyntax/README.md)
+See [02-BasicSyntax](./02-BasicSyntax/)
 
 ### "Exercises"
 
 https://google.github.io/comprehensive-rust/exercises/day-1/morning.html
 
-See [03-Exercises/README.md](./03-Exercises/README.md)
+See [03-Exercises](./03-Exercises/)
