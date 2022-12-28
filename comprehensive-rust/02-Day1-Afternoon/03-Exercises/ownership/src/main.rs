@@ -19,14 +19,14 @@ fn main() {
     println!("v[2]: {:?}", iter.next());
     println!("No more items: {:?}", iter.next());
 
-    let v0: Option<..> = iter.next(); // TODO: Error, Needs Fixing
+    let v0: Option<&i8> = iter.next();
     println!("v0: {v0:?}");
 
 
     let w: Vec<String> = vec![String::from("foo"), String::from("bar")];
     let mut iter = w.into_iter();
 
-    let w0: Option<..> = iter.next(); // TODO: Error, Needs Fixing
+    let w0: Option<String> = iter.next();
     println!("w0: {w0:?}");
 
     let x: Vec<String> = vec![String::from("foo"), String::from("bar")];
