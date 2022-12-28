@@ -75,7 +75,7 @@ Expected Output:
 ```bash
 ❯ cargo run
    Compiling arrays_loops v0.1.0 (/Users/__USERNAME__/__PATHTO__/arrays_loops)
-    Finished dev [unoptimized + debuginfo] target(s) in 0.09s
+    Finished dev [unoptimized + debuginfo] target(s) in 0.10s
      Running `target/debug/arrays_loops`
 matrix:
 | 101 102 103 |
@@ -86,4 +86,5 @@ transposed:
 | 101 201 301 |
 | 102 202 302 |
 | 103 203 303 |
+
 ```
