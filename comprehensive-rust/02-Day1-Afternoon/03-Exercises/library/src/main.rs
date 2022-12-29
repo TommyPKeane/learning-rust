@@ -1,10 +1,8 @@
-// TODO: remove this when you're done with your implementation.
-#![allow(unused_variables, dead_code)]
-
 struct Library {
     books: Vec<Book>,
 }
 
+#[derive(PartialEq)]
 struct Book {
     title: String,
     year: u16,
@@ -29,47 +27,65 @@ impl std::fmt::Display for Book {
 
 impl Library {
     fn new() -> Library {
-        unimplemented!()
+        Library {
+            books: vec![],
+        }
     }
 
-    //fn len(self) -> usize {
-    //    unimplemented!()
-    //}
+    fn len(&self) -> usize {
+        return self.books.len();
+    }
 
-    //fn is_empty(self) -> bool {
-    //    unimplemented!()
-    //}
+    fn is_empty(&self) -> bool {
+        return self.books.len() < 1;
+    }
 
-    //fn add_book(self, book: Book) {
-    //    unimplemented!()
-    //}
+    fn add_book(&mut self, book: Book) {
+        self.books.push(book);
+        return;
+    }
 
-    //fn print_books(self) {
-    //    unimplemented!()
-    //}
+    fn print_books(&self) {
+        for book in &self.books {
+            println!("{} ({})", book.title, book.year)
+        }
+        return;
+    }
 
-    //fn oldest_book(self) -> Option<&Book> {
-    //    unimplemented!()
-    //}
+    fn oldest_book(&self) -> Option<&Book> {
+        let mut oldest: Option<&Book> = None;
+        for book in &self.books {
+            if oldest == None {
+                oldest = Some(&book);
+            } else {
+                if book.year < oldest?.year {
+                    oldest = Some(&book);
+                }
+            }
+        }
+        return oldest;
+    }
 }
 
 fn main() {
     // This shows the desired behavior. Uncomment the code below and
     // implement the missing methods. You will need to update the
     // method signatures, including the "self" parameter!
-    let library = Library::new();
 
-    //println!("Our library is empty: {}", library.is_empty());
-    //
-    //library.add_book(Book::new("Lord of the Rings", 1954));
-    //library.add_book(Book::new("Alice's Adventures in Wonderland", 1865));
-    //
-    //library.print_books();
-    //
-    //match library.oldest_book() {
-    //    Some(book) => println!("My oldest book is {book}"),
-    //    None => println!("My library is empty!"),
-    //}
-    //
-    //println!("Our library has {} books", library.len());
+    // let library = &mut Library::new(); // Alternative Declaration
+    let mut library = Library::new();
+
+    println!("Our library is empty: {}", library.is_empty());
+
+    library.add_book(Book::new("Lord of the Rings", 1954));
+    library.add_book(Book::new("Alice's Adventures in Wonderland", 1865));
+
+    library.print_books();
+
+    match library.oldest_book() {
+        Some(book) => println!("My oldest book is {book}"),
+        None => println!("My library is empty!"),
+    }
+
+    println!("Our library has {} book(s)", library.len());
 }

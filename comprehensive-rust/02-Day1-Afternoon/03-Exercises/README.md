@@ -7,8 +7,8 @@ https://google.github.io/comprehensive-rust/exercises/day-1/afternoon.html
 <!-- MarkdownTOC -->
 
 - Exercises
-    - 11.1: Designing a Library
-    - 11.2: Iterators and Ownership
+   - 11.1: Designing a Library
+   - 11.2: Iterators and Ownership
 
 <!-- /MarkdownTOC -->
 
@@ -21,14 +21,18 @@ cd library;
 cargo run;
 ```
 
-Original Errored Output:
-
-```bash
-```
-
 Expected Output (fixed):
 
 ```bash
+❯ cargo run
+   Compiling library v0.1.0 (/Users/__USERNAME__/__PATHTO__/library)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.12s
+     Running `target/debug/library`
+Our library is empty: true
+Lord of the Rings (1954)
+Alice's Adventures in Wonderland (1865)
+My oldest book is Alice's Adventures in Wonderland (1865)
+Our library has 2 book(s)
 ```
 
 ### 11.2: Iterators and Ownership
