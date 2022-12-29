@@ -5,7 +5,8 @@ This repository provides some examples and personal efforts in learning how to d
 <!-- MarkdownTOC -->
 
 - Repo Structure
-    - "Comprehensive Rust" \(`google-comprehensive-rust`\)
+    - "Comprehensive Rust" \(`comprehensive-rust`\)
+    - "Fullstack Rust" \(`fullstack-rust`\)
 - Terminology
     - Cargo
     - Crate
@@ -19,14 +20,24 @@ This repository provides some examples and personal efforts in learning how to d
 
 These sections go through explanations and reference links related to each directory, to summarize the contents of this repository.
 
-### "Comprehensive Rust" (`google-comprehensive-rust`)
+### "Comprehensive Rust" (`comprehensive-rust`)
 
 This directory contains examples and tutorial code from going through Google's "Comprehensive Rust" online book.
 
-See the local [README](./comprehensive-rust/README.md) for more details.
+See the local [README](./comprehensive-rust/) for more details.
 
 - https://github.com/google/comprehensive-rust/
 - https://google.github.io/comprehensive-rust/welcome.html
+
+### "Fullstack Rust" (`fullstack-rust`)
+
+This directory contains examples and tutorial code from going through the "Fullstack Rust" (2020, first edition) book, which can be purchased [here](https://www.newline.co/fullstack-rust).
+
+See the local [README](./fullstack-rust/) for more details.
+
+- https://www.newline.co/fullstack-rust
+- https://actix.rs/
+
 
 ## Terminology
 
