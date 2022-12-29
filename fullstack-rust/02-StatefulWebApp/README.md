@@ -58,7 +58,7 @@ curl -X "GET" 127.0.0.1:8080
 And you'll get this response:
 
 ```bash
-{"message":"world"}
+{"server_id":3,"request_count":1,"message":[]}
 ```
 
 And then if you go back to the other terminal where you ran the application, you should see log messages showing that your request was processed:
