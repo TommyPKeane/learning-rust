@@ -14,12 +14,10 @@ This directory contains code examples based-on the lessons and code in the book 
 
 "Fullstack Rust"
 
-Written by Andrew Weiss
-
+Written by Andrew Weiss<br/>
 Edited by Nate Murray
 
-© 2020 Fullstack.io
-
+© 2020 Fullstack.io<br/>
 First Edition, Revision 4
 
 https://www.newline.co/fullstack-rust
@@ -33,10 +31,10 @@ _(I'm not affiliated with this book or its authors at all, so please buy it if y
 
 ## License
 
-> Written by Andrew Weiss
+> Written by Andrew Weiss<br/>
 > Edited by Nate Murray
 >
-> © 2020 Fullstack.io
+> © 2020 Fullstack.io<br/>
 > First Edition, Revision 4
 >
 > All rights reserved. No portion of the book manuscript may be reproduced, stored in a retrieval system, or transmitted in any form or by any means beyond the number of purchased copies, except for a single backup or archival copy. The code may be used freely in your projects, commercial or otherwise.
