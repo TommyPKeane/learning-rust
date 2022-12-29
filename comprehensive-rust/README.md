@@ -4,9 +4,14 @@ This code comes from the "Comprehensive Rust" book, as rewritten and updated by 
 
 <!-- MarkdownTOC -->
 
+- Book
 - References
 
 <!-- /MarkdownTOC -->
+
+## Book
+
+_(I'm not affiliated with this book or its authors at all, it's free online, so use it if you want, or don't, or whatever. You do you.)_
 
 ## References
 
