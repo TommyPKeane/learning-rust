@@ -7,6 +7,7 @@ This repository provides some examples and personal efforts in learning how to d
 - Repo Structure
     - "Comprehensive Rust" \(`comprehensive-rust`\)
     - "Fullstack Rust" \(`fullstack-rust`\)
+    - Machine Learning in Rust with `libtorch` \(`ml-libtorch`\)
 - Terminology
     - Cargo
     - Crate
@@ -38,6 +39,12 @@ See the local [README](./fullstack-rust/) for more details.
 - https://www.newline.co/fullstack-rust
 - https://actix.rs/
 
+### Machine Learning in Rust with `libtorch` (`ml-libtorch`)
+
+This directory uses the `tch-rs` package to bind to `libtorch` and shows some examples of how to do Machine Learning in Rust, similar to using PyTorch in Python.
+
+- https://github.com/LaurentMazare/tch-rs
+- https://pytorch.org/
 
 ## Terminology
 
