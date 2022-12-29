@@ -41,18 +41,20 @@ fn index(state:web::Data<AppState>) -> Result<web::Json<IndexResponse>> {
 
 pub struct MessageApp {
     port: u16,
+    address: String,
 }
 
 impl MessageApp {
-    pub fn new(port: u16) -> Self {
+    pub fn new(address: &str, port: u16) -> Self {
         MessageApp {
-            port
+            port: port,
+            address: address.to_string(),
         }
     }
 
     pub fn run(&self) -> std::io::Result<()> {
         let messages = Arc::new(Mutex::new(vec![]));
-        println!("Starting http server: 127.0.0.1:{}", self.port);
+        println!("Starting http server: {}:{}", self.address, self.port);
 
         HttpServer::new(
             move
@@ -69,7 +71,7 @@ impl MessageApp {
                 .service(index)
             }
         )
-        .bind(("127.0.0.1", self.port))?
+        .bind(format!("{}:{}", self.address, self.port))?
         .workers(8)
         .run()
     }
