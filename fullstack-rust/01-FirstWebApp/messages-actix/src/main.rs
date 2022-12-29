@@ -5,5 +5,5 @@ fn main() -> std::io::Result<()> {
     env_logger::init();
 
     let app = MessageApp::new(8080);
-    app.run();
+    app.run()
 }

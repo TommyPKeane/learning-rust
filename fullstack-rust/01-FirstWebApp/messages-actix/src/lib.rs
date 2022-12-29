@@ -30,7 +30,7 @@ fn index(req: HttpRequest) -> Result<web::Json<IndexResponse>> {
                 message: hello.to_owned(),
             }
         )
-    );
+    )
 }
 
 pub struct MessageApp {
@@ -57,6 +57,6 @@ impl MessageApp {
         )
         .bind(("127.0.0.1", self.port))?
         .workers(8)
-        .run();
+        .run()
     }
 }
