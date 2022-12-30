@@ -48,6 +48,11 @@ At this point, you can now go through and build/run any of the examples as docum
 
 The subsections here provide details on each `crate` (Rust package) setup in this directory of examples related to `libtorch` by using `tch-rs` (`cargo add tch`) for Rust programming of Machine Learning algorithms.
 
+Note that these examples are setup using the following commands:
+
+- `cargo new DIRECTORYNAME`
+- `cargo add --features python,cpython tch`
+
 ### `example-computationalgraph`
 
 This is an example based on the article and code from these links (minimal edits made):
