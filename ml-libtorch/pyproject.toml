@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ml-libtorch"
+version = "1.0.0"
+description = "Example using tch-rs and pytorch for Python and Rust"
+authors = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+maintainers = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+homepage = "https://www.tommypkeane.com"
+repository = "https://github.com/TommyPKeane/learning-rust/ml-libtorch"
+license = "MIT"
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.13.1"
