@@ -7,6 +7,7 @@
 - Prequisite Tools
 - Development Setup
 - Build and Run
+    - `example-computationalgraph`
     - `example-tensors`
 - References
 
@@ -47,6 +48,31 @@ At this point, you can now go through and build/run any of the examples as docum
 
 The subsections here provide details on each `crate` (Rust package) setup in this directory of examples related to `libtorch` by using `tch-rs` (`cargo add tch`) for Rust programming of Machine Learning algorithms.
 
+### `example-computationalgraph`
+
+This is an example based on the article and code from these links (minimal edits made):
+
+- https://github.com/vegapit/tchtut/blob/master/examples/blackpricing.rs
+- https://vegapit.com/article/how-to-use-torch-in-rust-with-tch-rs
+
+```bash
+cd example-computationalgraph;
+cargo run
+```
+
+Expected Output:
+
+```bash
+❯ cargo run
+   Compiling ... // REDACTED FOR BREVITY
+   Compiling example-computationalgraph v0.1.0 (/Users/__USERNAME__/__PATHTO__/example-computationalgraph)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.20s
+     Running `target/debug/example-computationalgraph`
+price: 11.8049
+delta: 0.5540, vega: 39.0554
+gamma: 0.0130, vanna: 0.1953, volga: -2.9292
+```
+
 ### `example-tensors`
 
 This is a simple example executable from the `tch-rs` repo's README which shows how to import `tch` and use the `libtorch` `Tensor` objects for some mathematical computations.
@@ -61,7 +87,7 @@ Expected Output:
 ```bash
 ❯ cargo run
    Compiling ... // REDACTED FOR BREVITY
-   Compiling example-tensors v0.1.0 (/Users/tommy/dev/tommypkeane/learning-rust/ml-libtorch/example-tensors)
+   Compiling example-tensors v0.1.0 (/Users/__USERNAME__/__PATHTO__/example-tensors)
     Finished dev [unoptimized + debuginfo] target(s) in 16.79s
      Running `target/debug/example-tensors`
   6
@@ -79,3 +105,4 @@ Expected Output:
 - http://vegapit.com/article/how-to-use-torch-in-rust-with-tch-rs
 - https://github.com/metobom/tchrs-opencv-webcam-inference
 - https://github.com/LaurentMazare/tch-rs/tree/main/examples/mnist
+- https://doc.rust-lang.org/cargo/reference/environment-variables.html
