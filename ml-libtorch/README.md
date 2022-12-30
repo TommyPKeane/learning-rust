@@ -58,12 +58,13 @@ Note that these examples are setup using the following commands:
 
 An example of a `char-rnn` (Character-based Recurrent Neural Network) for training a Natural Language Processing (NLP) Deep-Learning Model for generating sample text.
 
-Code has come from these references and been updated for readability and testing purposes:
+Code and data has come from these references and been updated for readability and testing purposes:
 
--
+- https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
+- https://github.com/karpathy/char-rnn
+- https://github.com/LaurentMazare/tch-rs/blob/main/examples/char-rnn/main.rs
 
 ⚠️ Note that this runs the Training algorithm with a final output after `N` Epochs (iterations) of "Sample Text", so the runtime is largely dependent upon the size of the training dataset (the text) and the number of Epochs (`N`). Running on a standard laptop, this can take seconds, minutes, hours, days, or weeks, depending on the input data and number of Epochs (`N`).
-
 
 ```bash
 cd example-char-rnn;
