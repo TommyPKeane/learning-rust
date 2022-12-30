@@ -1,5 +1,12 @@
 # First Web App (Example)
 
+"Fullstack Rust" (2020) has helpful examples, but they are from the `actix-web@1.0` version of the `actix` Package, and working on this in 2022, there is a much newer version of `actix` (currently: `4.2.1`).
+
+I've implemented both versions, here, with the two packages using two different versions of `actix-web`:
+
+- `messages-actix` uses `actix-web@1.0` per the "Fullstack Rust" book
+- `actix-latest` uses `actix-web` (`4.2.1` is current `latest` version at the time of this writing)
+
 <!-- MarkdownTOC -->
 
 - `messages-actix`
