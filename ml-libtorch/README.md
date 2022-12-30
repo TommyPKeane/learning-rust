@@ -7,6 +7,7 @@
 - Prequisite Tools
 - Development Setup
 - Build and Run
+    - `example-char-rnn`
     - `example-computationalgraph`
     - `example-tensors`
 - References
@@ -52,6 +53,50 @@ Note that these examples are setup using the following commands:
 
 - `cargo new DIRECTORYNAME`
 - `cargo add --features python,cpython tch`
+
+### `example-char-rnn`
+
+An example of a `char-rnn` (Character-based Recurrent Neural Network) for training a Natural Language Processing (NLP) Deep-Learning Model for generating sample text.
+
+Code has come from these references and been updated for readability and testing purposes:
+
+-
+
+⚠️ Note that this runs the Training algorithm with a final output after `N` Epochs (iterations) of "Sample Text", so the runtime is largely dependent upon the size of the training dataset (the text) and the number of Epochs (`N`). Running on a standard laptop, this can take seconds, minutes, hours, days, or weeks, depending on the input data and number of Epochs (`N`).
+
+
+```bash
+cd example-char-rnn;
+cargo run
+```
+
+The above will build, then run the code, which will read-in the `example-char-rnn/data/input.txt` plaintext file and use all the characters in this file as the training data for training a new Machine Learning Algorithm/"Model", based on the `nn::lstm`, `nn::linear`, and `nn::Adam` models from `torch` (`tch`).
+
+Depending on the configuration you should see something like this as the output, and then a sample text will print when all Epochs (overall training iterations) have completed:
+
+```bash
+❯ cargo run
+   Compiling example-char-rnn v0.1.0 (/Users/__USERNAME__/__PATHTO__/example-char-rnn)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.28s
+     Running `target/debug/example-char-rnn`
+Dataset loaded, 58 labels.
++ Processing Epoch 1 (BATCH_SIZE: 256):
+[00:00:44] ########################################     101/
+  > Epoch: 1, loss: 2.508
+
++ Processing Epoch 2 (BATCH_SIZE: 256):
+[00:00:48] ########################################     101/101
+  > Epoch: 2, loss: 1.378
+
+  > Sample:
+{{SAMPLE TEXT WILL BEEN PRINTED HERE}}
+```
+
+The goal of this ML Algorithm is to take the input data and train itself to recognize the characters and their relational structure to each other to recreate text that is similar to the `input.txt` file.
+
+In a loosely generic sense, if we're using a sample text based-on the writings of William Shakespeare, then you can think of this ML Algorithm as being a character-based "NLP Model" that will generate sample text that looks like something that Shakespeare would've written.
+
+Note: It should be made clear that this is not necessarily relevant to do anything, because it is very unlikely that the individual unicode characters and their relative layouts are themselves, alone, sufficiently indicative to recreate the writing style of William Shakespeare while also producing something readable, sensible, and acceptably similar. On the other hand, there is potentially an argument to be made that the painting style of an artist could potentially be recreated if the qualia of the brush strokes are "learned" and can be sampled in sensibly appropriate manner. This is the core complexity of "fitness" ("goodness" / "success") in Machine Learning.
 
 ### `example-computationalgraph`
 
